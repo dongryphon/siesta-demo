@@ -14,6 +14,8 @@ StartTest(t => {
             await t.type(Page.pswd, 'foobar');
 
             await t.click(Page.login);
+
+            t.expect(1).toBe(1);
         });
     });
 });
