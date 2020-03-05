@@ -2,16 +2,13 @@
   "name": "siestademo",
   "version": "1.0.0",
   "description": "Bryntum Siesta demo",
+  "author": "dongryphon",
+  "license": "MIT",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "keywords": [
     "siesta",
     "test"
   ],
-  "author": "dongryphon",
-  "license": "ISC",
   "dependencies": {
     "siesta-lite": "^5.3.1"
   }
