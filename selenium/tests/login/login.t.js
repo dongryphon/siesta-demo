@@ -1,6 +1,4 @@
 const webdriver = require('selenium-webdriver');
-// const chrome = require('selenium-webdriver/chrome');
-// const firefox = require('selenium-webdriver/firefox');
 
 describe('Happy path', function() {
     let driver;
@@ -21,6 +19,8 @@ describe('Happy path', function() {
                 browserName : 'firefox'
             }).
             build();
+
+        driver.get('http://localhost/myapp');
     });
 
     after(function() {
