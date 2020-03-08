@@ -1,21 +1,19 @@
-StartTest(t => {
+describe('Login to application', t => {
     const Page = {
         name : 'input[name="name"]',
         pswd : 'input[type="password"]',
         login : 'input[type="button"]'
     };
 
-    t.describe('Happy path', t => {
-        t.it('should login with name and password', async t => {
-            await t.click(Page.name);
-            await t.type(Page.name, 'dongryphon');
+    t.it('should login with name and password', async t => {
+        await t.click(Page.name);
+        await t.type(Page.name, 'dongryphon');
 
-            await t.click(Page.pswd);
-            await t.type(Page.pswd, 'foobar');
+        await t.click(Page.pswd);
+        await t.type(Page.pswd, 'foobar');
 
-            await t.click(Page.login);
+        await t.click(Page.login);
 
-            t.expect(1).toBe(1);
-        });
+        t.expect(1).toBe(1);
     });
 });
